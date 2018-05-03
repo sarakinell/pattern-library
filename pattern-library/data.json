@@ -1,0 +1,141 @@
+{
+    "project_logo": "shopify-logo.png",
+    "project_favicon": "favicon.png",
+    "project_name": "Shopify",
+    "project_url": "https://www.shopify.com/",
+    "copyright_start_year": 2018,
+    "client_name": "Ginetta",
+    "client_url": "https://ginetta.net/",
+    "creators": [
+        {
+            "name": "Sara Kinell",
+            "url": "https://twitter.com/sarakinell"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#202e78",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "hybrid",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "https://cdn.shopify.com/assets2/application-4ac58c94e5c0813f544a4924cd6f70f27234efac9caba166f4a13ec56037dd45.css"
+        ],
+        "js": [
+            "https://cdn.shopify.com/assets2/application-5f14512e6a81126308cc83f6e43feb39996308a6fa2b66d5d86b00f4771f473f.js"
+        ]
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "atoms",
+            "title": "Atoms",
+            "components": [
+                {
+                    "name": "primarybutton",
+                    "title": "Primary button light",
+                    "width": "half",
+                    "options": {},
+                    "group": "atoms"
+                },
+                {
+                    "name": "primarybuttondark",
+                    "title": "Primary button dark",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    },
+                    "group": "atoms"
+                },
+                {
+                    "name": "secondarybutton",
+                    "title": "Secondary button",
+                    "width": "half",
+                    "group": "atoms"
+                },
+                {
+                    "name": "linkbutton",
+                    "title": "Link button",
+                    "width": "half",
+                    "group": "atoms"
+                },
+                {
+                    "name": "emailinput",
+                    "title": "Email input",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    },
+                    "group": "atoms"
+                },
+                {
+                    "name": "searchinput",
+                    "title": "Search input",
+                    "width": "half",
+                    "group": "atoms"
+                }
+            ]
+        },
+        {
+            "name": "molecules",
+            "title": "Molecules",
+            "components": [
+                {
+                    "name": "inputbutton",
+                    "title": "Input + button",
+                    "group": "molecules"
+                },
+                {
+                    "group": "molecules",
+                    "name": "linkbutton",
+                    "title": "Link dropdown",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "organisms",
+            "title": "Organisms",
+            "components": [
+                {
+                    "name": "textimage",
+                    "title": "Text + button + image",
+                    "group": "organisms"
+                },
+                {
+                    "name": "socialproof",
+                    "title": "Social proof",
+                    "group": "organisms"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
