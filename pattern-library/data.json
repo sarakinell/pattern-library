@@ -113,10 +113,10 @@
                     "group": "molecules"
                 },
                 {
-                    "group": "molecules",
-                    "name": "linkbutton",
-                    "title": "Link dropdown",
-                    "width": "half"
+                    "name": "linkhoverbutton",
+                    "title": "Link + dropdown on hover",
+                    "width": "half",
+                    "group": "molecules"
                 }
             ]
         },
