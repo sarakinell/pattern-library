@@ -1,0 +1,1 @@
+Alternative settings, such as language, in a dark blue footer or header.

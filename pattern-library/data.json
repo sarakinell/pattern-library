@@ -113,10 +113,17 @@
                     "group": "molecules"
                 },
                 {
-                    "name": "linkhoverbutton",
-                    "title": "Link + dropdown on hover",
+                    "name": "optionsbutton",
+                    "title": "Button + options on click",
                     "width": "half",
+                    "options": {},
                     "group": "molecules"
+                },
+                {
+                    "group": "molecules",
+                    "name": "linkbutton",
+                    "title": "Button + links on hover",
+                    "width": "half"
                 }
             ]
         },
