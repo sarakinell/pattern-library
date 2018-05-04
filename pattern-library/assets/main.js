@@ -1,4 +1,5 @@
-! function(e, t) {
+!function(e, t) {
+    console.log('hi')
     function n(e, t) {
         return e && t && e.type === t.type && e.name === t.name && d(e.metaData, t.metaData)
     }
@@ -309,7 +310,7 @@
             } catch (n) {
                 e[i] = t[i]
             }
-            return e
+        return e
     }
 
     function w(e, t) {
@@ -1936,7 +1937,8 @@ var babelHelpers = function(e) {
                         if ((r = o[a++]) != r) return !0
                 } else
                     for (; s > a; a++)
-                        if ((e || a in o) && o[a] === n) return e || a || 0; return !e && -1
+                        if ((e || a in o) && o[a] === n) return e || a || 0;
+                return !e && -1
             }
         },
         ke = we(!1),
@@ -3280,7 +3282,8 @@ var babelHelpers = function(e) {
                 for (n = e.length; r < n && !1 !== t.call(e[r], r, e[r]); r++);
             else
                 for (r in e)
-                    if (!1 === t.call(e[r], r, e[r])) break; return e
+                    if (!1 === t.call(e[r], r, e[r])) break;
+            return e
         },
         trim: function(e) {
             return null == e ? "" : (e + "").replace(me, "")
@@ -5348,7 +5351,6 @@ var babelHelpers = function(e) {
         }
     }), ge.fn.extend({
         hover: function(e, t) {
-        	debugger;
             return this.mouseenter(e).mouseleave(t || e)
         }
     }), pe.focusin = "onfocusin" in e, pe.focusin || ge.each({
@@ -6639,12 +6641,14 @@ var Mailcheck = {
                                 if ("" === l) return u && a.push(u), void r();
                                 u += l
                             }
-                        } else if ("in parens" === c)
+                        }
+                    else if ("in parens" === c)
                         if (")" === l) u += l, c = "in descriptor";
                         else {
                             if ("" === l) return a.push(u), void r();
                             u += l
-                        } else if ("after descriptor" === c)
+                        }
+                    else if ("after descriptor" === c)
                         if (i(l));
                         else {
                             if ("" === l) return void r();
@@ -6779,7 +6783,7 @@ var Mailcheck = {
                         else try {
                             F[t] = new Function("e", n(t))(q)
                         } catch (e) {}
-                        return F[t]
+                    return F[t]
                 }
             }(),
             Y = function(e, t) {
@@ -7543,14 +7547,14 @@ var I18n = function(e, t, n) {
                 s = this.data,
                 a = 0,
                 u = o.length;
-            try {
-                for (u; a < u; a++) s = s[o[a]];
-                this.validatePlural(s, r) && (s = s[this.pluralize(s, r.count)]);
-                var c = t(this.globals, r);
-                return e(c).length ? n.template(s, c) : s
-            } catch (e) {
-                throw new Error("failed to translate key " + i)
-            }
+            // try {
+            //     for (u; a < u; a++) s = s[o[a]];
+            //     this.validatePlural(s, r) && (s = s[this.pluralize(s, r.count)]);
+            //     var c = t(this.globals, r);
+            //     return e(c).length ? n.template(s, c) : s
+            // } catch (e) {
+            //     throw new Error("failed to translate key " + i)
+            // }
         }, i.prototype.validatePlural = function(e, t) {
             return n.isObject(e) && t && "undefined" != typeof t.count
         }, i.prototype.pluralize = function(e, t) {
@@ -8677,7 +8681,7 @@ this.ShopifyMarketing = this.ShopifyMarketing || {}, this.ShopifyMarketing.Drawe
             var r = e(".js-open-signup"),
                 o = e(".js-signup-inline");
             (r.length || o.length) && (this.SignupModal = new n(r, i.bind(this, {
-                signupHeader: t.t("signup.header")
+                // signupHeader: t.t("signup.header")
             }), {
                 modalActiveContainerClass: "signup-modal js-is-active",
                 clickingOverlayClosesModal: !1

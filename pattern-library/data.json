@@ -34,7 +34,7 @@
             "https://cdn.shopify.com/assets2/application-4ac58c94e5c0813f544a4924cd6f70f27234efac9caba166f4a13ec56037dd45.css"
         ],
         "js": [
-            "https://cdn.shopify.com/assets2/application-5f14512e6a81126308cc83f6e43feb39996308a6fa2b66d5d86b00f4771f473f.js"
+            "assets/main.js"
         ]
     },
     "font_libraries": {
